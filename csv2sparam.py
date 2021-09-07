@@ -28,7 +28,7 @@ fstart="0"
 fstop="0"
 
 f = open("output.s1p", "w")
-with open('input.csv', newline='') as csvfile:
+with open('input.csv', newline='', encoding="utf8") as csvfile:
     reader = csv.reader(csvfile, delimiter = ',')
     found=0
     totlines=0
